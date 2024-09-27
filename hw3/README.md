@@ -1,14 +1,18 @@
 ## Run Experiment
-Run the experiment with the following command:
+Run the experiment with the following commands:
 
 ```Shell
+git clone https://github.com/abidnazirisami/ezr
+cd ezr
+git checkout 24Aug14
+cd hw3
 bash run_exp.sh
 ```
 
 ## Claims
 
-**JJR1**: Nothing works better than 50 random guesses for low dimensional problems (less than 6 x attributes).
-**JJR2**: But such random guessing is rubbish for higher dimensional data.
+- **JJR1**: Nothing works better than 50 random guesses for low dimensional problems (less than 6 x attributes).
+- **JJR2**: But such random guessing is rubbish for higher dimensional data.
 
 ## Results
 Here are the results:
@@ -117,4 +121,4 @@ rrp                32 (  0)     51 (  0)     34 (  0)     34 ( 16)      30 (  0)
 
 ## Conclusion
 
-From my observations, I doubt the JJR1/JJR2 hypothesis
+From my observations, I doubt the JJR1 and the JJR2 hypotheses
