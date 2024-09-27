@@ -9,7 +9,9 @@ rm tmp
 
 # Create and run script
 echo "----------------- Running experiments -----------------"
-make Act=${output} acts
+mkdir -p ~/tmp
+make Act=${output} acthw3 > ~/tmp/$(output).sh
+bash ~/tmp/$(output).sh
 
 # Summarize results
 process_csv_files() {
