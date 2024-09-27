@@ -1,17 +1,17 @@
 output=mnaziri_hw3
+mkdir -p ~/tmp
 
 # Filter data into low and high dimensionality
 echo "----------------- Filtering data -----------------"
-python3.13 -B filter_data.py ../data/optimize/[chmp]*/*.csv > tmp
-grep -e "high" -e "dim" -e "----" tmp > high_dim_datasets.txt
-grep -e "low" -e "dim" -e "----" tmp > low_dim_datasets.txt
-rm tmp
+python3.13 -B filter_data.py ../data/optimize/[chmp]*/*.csv > ~/tmp/tmp
+grep -e "high" -e "dim" -e "----" ~/tmp/tmp > high_dim_datasets.txt
+grep -e "low" -e "dim" -e "----" ~/tmp/tmp > low_dim_datasets.txt
+rm ~/tmp/tmp
 
 # Create and run script
 echo "----------------- Running experiments -----------------"
-mkdir -p ~/tmp
-make Act=${output} acthw3 > ~/tmp/$(output).sh
-bash ~/tmp/$(output).sh
+make Act=${output} acthw3 > ~/tmp/${output}.sh
+bash ~/tmp/${output}.sh
 
 # Summarize results
 process_csv_files() {
