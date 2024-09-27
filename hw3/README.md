@@ -9,6 +9,20 @@ cd hw3
 bash run_exp.sh
 ```
 
+## Check implementation
+The experiment code can be run with a flag to enable checks. To do so, run the following code:
+
+```Shell
+python3.13 experiment.py <csv_file> <flag>
+```
+
+Example:
+```Shell
+python3.13 experiment.py ../data/optimize/config/SS-A.csv True
+```
+
+The checks are disabled by default, so running the experiment won't run the checks.
+
 ## Claims
 
 - **JJR1**: Nothing works better than 50 random guesses for low dimensional problems (less than 6 x attributes).
