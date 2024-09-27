@@ -5,7 +5,7 @@ SCRIPT_DIR = os.path.dirname(__file__)
 REPO_DIR = "/".join(SCRIPT_DIR.split("/")[:-1])
 sys.path.append(REPO_DIR)
 
-from ezr import the, DATA, csv, dot
+from ezr import the, DATA, csv
 
 def show(lst):
   return print(*[f"{word:6}" for word in lst], sep="\t")
